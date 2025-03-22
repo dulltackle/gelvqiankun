@@ -5,6 +5,10 @@ export default defineConfig({
   title: "格律乾坤医学",
   description: "格律乾坤医学数据库",
   base: "/gelvqiankun/",
+  sitemap: {
+    hostname: 'https://dulltackle.github.io/gelvqiankun/'
+  },
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
