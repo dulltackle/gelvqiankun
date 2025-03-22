@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "格律乾坤医学数据库"
   image:
-    src: /public/images/logo.png
+    src: /images/logo.png
     alt: gelvqiankun
   actions:
     - theme: brand

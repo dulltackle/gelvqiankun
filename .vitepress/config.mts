@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "格律乾坤医学",
   description: "格律乾坤医学数据库",
+  base: "/gelvqiankun/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
