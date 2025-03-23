@@ -50,7 +50,7 @@ export default defineConfig({
           { text: '补充定律', link: '/human-frame-theory/complementary-law' },
           { text: '人体框架组成的关键：骨盆、脊柱和骶髂关节', link: '/human-frame-theory/pelvis-spine-sacroiliac-joint' },
           { text: '失衡压迫理论', link: '/human-frame-theory/imbalance-compression-theory' },
-          { text: '骨盆倾斜、脊柱侧弯与骶髂关节', link: '/human-frame-theory/pelvic-tilt-spinal-curvature-sacroiliac-joint' },
+          { text: '人体框架失衡：骨盆倾斜、脊柱侧弯与骶髂关节', link: '/human-frame-theory/pelvic-tilt-spinal-curvature-sacroiliac-joint' },
           { text: '牵引复位术理论', link: '/human-frame-theory/traction-reduction-theory' },
         ]
       },
