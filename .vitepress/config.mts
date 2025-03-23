@@ -37,6 +37,7 @@ export default defineConfig({
       {
         text: '脊柱神经理论',
         items: [
+          { text: '骨内压', link: '/spinal-nerve-theory/intraosseous-pressure' },
           { text: '脊柱-神经系统功能理论', link: '/spinal-nerve-theory/spinal-nervous-system-function-theory' },
           { text: '针刺减压术理论', link: '/spinal-nerve-theory/acupuncture-decompression-theory' },
         ]
