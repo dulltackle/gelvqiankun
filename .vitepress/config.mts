@@ -57,6 +57,7 @@ export default defineConfig({
       {
         text: '修复技术',
         items: [
+          { text: '炎症', link: '/repair-techniques/inflammation' },
           { text: '建议减压量', link: '/repair-techniques/suggested-decompression-amount' },
         ]
       },
