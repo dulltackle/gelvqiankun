@@ -55,6 +55,12 @@ export default defineConfig({
         ]
       },
       {
+        text: '修复技术',
+        items: [
+          { text: '建议减压量', link: '/repair-techniques/suggested-decompression-amount' },
+        ]
+      },
+      {
         text: '疾病治疗',
         items: [
           { text: '对症选点', link: '/disease-treatment/symptom-specific-point-selection' },
