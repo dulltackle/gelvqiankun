@@ -69,6 +69,12 @@ export default defineConfig({
         ]
       },
       {
+        text: '技术推广',
+        items: [
+          { text: '拜师福利', link: '/promotion/apprenticeship-benefits' },
+        ]
+      },
+      {
         text: '其他',
         items: [
           { text: '结合三氧', link: '/others/combined-with-ozone' },
