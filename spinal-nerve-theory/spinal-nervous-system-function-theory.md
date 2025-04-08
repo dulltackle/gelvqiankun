@@ -1,5 +1,115 @@
 # 脊柱-神经系统功能理论
 
+```mermaid
+flowchart TD
+    %% 设置方向和布局
+    %% 使用子图分组相关内容
+    
+    subgraph Risk["<font size='4'>风险因素</font>"]
+        A1["年龄/遗传因素<br>"] 
+        A2["慢性劳损"]
+        A3["急性损伤"] 
+        A4["先天畸形<br>代谢异常"] 
+    end
+    
+    subgraph Initial["<font size='4'>初始病理变化</font>"]
+        B1["椎间盘退变"]
+        B2["软组织损伤/变性"]
+        B3["骨结构异常"]
+    end
+    
+    subgraph Structure["<font size='4'>结构功能改变</font>"]
+        C1["椎间盘高度降低<br>纤维环破裂<br>髓核突出/脱出"]
+        C2["椎周软组织相对松弛"]
+        C3["黄韧带肥厚，后纵韧带骨化"]
+        C4["骨赘形成<br>小关节肥厚"]
+        C5["脊柱力学失衡<br>（代偿/失代偿）"]
+        C6[/"椎体小关节错位<br>椎体滑移<br>椎小关节滑膜嵌顿"/]
+        C7[/"韧带向椎管内突出"/]
+        C8[/"骨质突入<br>椎间孔、横突孔"/]
+        C9("椎管狭窄<br>椎间孔狭窄<br>脊柱侧弯")
+    end
+    
+    subgraph Neural["<font size='4'>神经受累分类</font>"]
+        D1["炎症反应与免疫激活"]
+        D2["神经根受压"]
+        D3["脊髓受压"]
+        D4["继发性病理变化"]
+    end
+    
+    subgraph Symptoms["<font size='4'>临床症状</font>"]
+        E1["放射性疼痛<br>（单/多节段）"] 
+        E2["感觉/运动功能障碍<br>（局部/节段性）"]
+        E3["脊髓型症状<br>（进行性/间歇性）"]
+        E4["马尾综合征<br>（急性/慢性）"]
+        E5["交感神经功能障碍<br>（血管/内脏）"]
+        E6["慢性疼痛综合征"]
+        E7["神经敏感化<br>中枢致敏"]
+    end
+    
+    %% 连接风险因素到初始病理
+    A1 --> B1
+    A2 --> B1
+    A2 --> B2
+    A3 --> B1
+    A3 --> B2
+    A3 --> B3
+    A4 --> B3
+    
+    %% 连接初始病理到结构变化
+    B1 --> C1
+    B2 --> C2
+    B2 --> C3
+    B3 --> C4
+    
+    %% 连接结构变化之间的关系
+    C1 --> C5
+    C2 --> C5
+    C3 --> C7
+    C4 --> C8
+    C5 --> C6
+    C6 --> C9
+    C7 --> C9
+    C8 --> C9
+
+    %% 连接结构变化到神经受累
+    C9 --> D1
+    C9 --> D2
+    C9 --> D3
+    C9 --> D4
+
+    %% 连接神经受累到症状
+    D2 --> E1
+    D2 --> E2
+    D3 --> E3
+    D3 --> E4
+    D4 --> E5
+    D4 --> E6
+
+    %% 反馈循环
+    D2 -.-> |"疼痛-肌肉痉挛循环"| C5
+    E1 -.-> |"慢性化"| E7
+    E7 -.-> |"加重"| E1
+    E7 -.-> |"加重"| E5
+    
+    %% 样式定义
+    classDef risk fill:#f9f2d6,stroke:#333,stroke-width:1px
+    classDef pathology fill:#f9d6d6,stroke:#333,stroke-width:1px
+    classDef structure fill:#f9d6e6,stroke:#333,stroke-width:1px
+    classDef neural fill:#d6e6f9,stroke:#333,stroke-width:1px
+    classDef symptoms fill:#d6f9e0,stroke:#333,stroke-width:1px
+    classDef stages fill:#e0d6f9,stroke:#333,stroke-width:1px
+    classDef feedback fill:#ffe6cc,stroke:#ff9900,stroke-width:1px,stroke-dasharray: 5 5
+    
+    %% 应用样式
+    class A1,A2,A3,A4,Risk risk
+    class B1,B2,B3,Initial pathology
+    class C1,C2,C3,C4,C5,C6,C7,C8,C9,Structure structure
+    class D1,D2,D3,D4,Neural neural
+    class E1,E2,E3,E4,E5,E6,Symptoms symptoms
+    class E7 feedback
+```
+
 ## 理论概述
 
 - 脊柱-神经系统功能理论是脊椎神经医学的核心理论之一，认为脊柱结构异常会通过神经系统影响机体的健康。
